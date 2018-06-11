@@ -35,12 +35,12 @@
 # Authors
 # -------
 #
-# Author Name <author@domain.com>
+# Author Name: Mohammed Jawad Hussain
 #
 # Copyright
 # ---------
 #
-# Copyright 2018 Your name here, unless otherwise noted.
+# Copyright 2018 Mohammed Jawad Hussain
 #
 class ssh1 {
    $sname=hiera('sshservice')
