@@ -1,12 +1,20 @@
 # Class: ssh1
 # ===========================
 #
+# Authors
+# -------
+#
+# Author Name Mohammed Jawad Hussain 
+#
+# Copyright
+# ---------
+#
+# Copyright 2018 Mohammed Jawad Hussain 
 # Full description of class ssh1 here.
 #
 # Parameters
 # ----------
 #
-# Document parameters here.
 #
 # * `sample parameter`
 # Explanation of what this parameter affects and what it defaults to.
@@ -31,16 +39,6 @@
 #    class { 'ssh1':
 #      servers => [ 'pool.ntp.org', 'ntp.local.company.com' ],
 #    }
-#
-# Authors
-# -------
-#
-# Author Name <author@domain.com>
-#
-# Copyright
-# ---------
-#
-# Copyright 2018 Your name here, unless otherwise noted.
 #
 class ssh1 {
    $sname=hiera('sshservice')
