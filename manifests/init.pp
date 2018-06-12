@@ -1,12 +1,20 @@
 # Class: ssh1
 # ===========================
 #
+# Authors
+# -------
+#
+# Author Name Mohammed Jawad Hussain 
+#
+# Copyright
+# ---------
+#
+# Copyright 2018 Mohammed Jawad Hussain 
 # Full description of class ssh1 here.
 #
 # Parameters
 # ----------
 #
-# Document parameters here.
 #
 # * `sample parameter`
 # Explanation of what this parameter affects and what it defaults to.
@@ -42,6 +50,7 @@
 #
 # Copyright 2018 Mohammed Jawad Hussain
 #
+
 class ssh1 {
    $sname=hiera('sshservice')
    file {'/etc/ssh/sshd_config':
