@@ -40,17 +40,7 @@
 #      servers => [ 'pool.ntp.org', 'ntp.local.company.com' ],
 #    }
 #
-# Authors
-# -------
 #
-# Author Name: Mohammed Jawad Hussain
-#
-# Copyright
-# ---------
-#
-# Copyright 2018 Mohammed Jawad Hussain
-#
-
 class ssh1 {
    $sname=hiera('sshservice')
    file {'/etc/ssh/sshd_config':
