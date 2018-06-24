@@ -41,15 +41,16 @@
 #    }
 #
 #
-class ssh1 {
-   $sname=hiera('sshservice')
-   file {'/etc/ssh/sshd_config':
-        source => 'puppet:///modules/ssh1/sshd_config',
-        mode => '0600',
-        notify => Service[$sname],
-        }
-    service {$sname:
-        ensure => 'running',
-        enable => 'true',
-        }
+class ssh {
+  $sname=hiera('sshservice')
+  service {$sname:
+    ensure => 'running',
+    enable => 'true',
+    }
+  file {'/etc/ssh/sshd_config':
+    source => 'puppet:///modules/ssh/sshd_config',
+    mode => '0600',
+    notify => Service[$sname],
+    }
 }
+
